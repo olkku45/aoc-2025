@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::{prelude::*, BufReader};
 
 fn get_password() -> Result<(), std::io::Error> {
-    let file = File::open("input.txt").unwrap();
+    let file = File::open("../input.txt").unwrap();
     let reader = BufReader::new(file);
 
     let mut count = 0;
